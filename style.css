@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
 body::before {
     display: block;
     content: "";
@@ -10,27 +16,133 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* #map {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+h1 {
+    font-weight: 500;
+}
+
+.bg-1 {
+    background-color: #e7f5fc;
+}
+
+.bg-2 {
+    background-color: #f0fbff;
+}
+
+.bg-3 {
+    /* background-color: #1876f0; */
+    background: linear-gradient(90deg, rgba(52, 117, 221, 1) 14%, rgba(16, 92, 182, 1) 62%);
+}
+
+@keyframes pulse_01 {
+    0% {
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(9, 103, 226, 0.952);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 12px rgba(255, 255, 255, 0);
+    }
+    100% {
+        transform: scale(0.94);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+/* .section-padding {
+    padding: 80px 0;
+    overflow-x: hidden;
 } */
+
+.btn-whatsapp {
+    border-radius: 20px;
+    margin-right: 20px;
+    animation: pulse_01 2s ease infinite;
+}
+
+.btn-email {
+    border-radius: 20px;
+}
+
+.navbar .nav-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.dropdown-toggle::after {
+    transition: ease-in-out transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+}
+
+.btn-whatsapp-navbar {
+    background-color: rgb(13, 192, 13);
+    border-radius: 70%;
+    /* animation: pulse_01 2s ease infinite; */
+}
+
+.icon-whatsapp-navbar img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-language-navbar img {
+    width: 80px;
+    height: 23px;
+}
 
 .map iframe {
     border-radius: 10px;
-}
-
-h1 {
-    font-weight: 500;
 }
 
 .card {
     border-radius: 10px;
 }
 
+/* style for contacts start */
+.tap-content-branch .nav-pills {
+    overflow-x: auto;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+.tap-content-branch .nav-item {
+    margin-bottom: 16px;
+    width: auto;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+.tap-content-branch .nav-item button {
+    width: auto;
+}
+/* style for contacts end */
+
 /* responsive */
 @media (min-width: 768px) {
     .products-input {
         width: 50%;
     }
+
+    .tap-content-branch .nav-item {
+        margin-bottom: 16px;
+        width: auto;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .tap-content-branch .nav-item button {
+        width: auto;
+    }
 }
+
+/* @media screen and (max-width: 760px) {
+} */

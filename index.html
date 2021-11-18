@@ -7,14 +7,17 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
         <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
-
         <link rel="stylesheet" href="style.css" />
-        <title>New Compro</title>
+        <link rel="shortcut icon" href="https://tunasmitra.co.id/frontend/img/TM.png" />
+        <title>Tunas Mitra</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <!-- bg-dark navbar-dark -->
+        <nav class="navbar bg-1 navbar-light navbar-expand-lg py-3 fixed-top">
             <div class="container">
-                <a href="#" class="navbar-brand">Tunas Mitra</a>
+                <a href="#" class="navbar-brand">
+                    <img src="https://tunasmitra.co.id/frontend/img/Logo-Tunas-Mitra.png" alt="" srcset="" />
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
@@ -23,16 +26,58 @@
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a href="#learn" class="nav-link">Learn</a>
+                            <a href="#learn" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tentang Kami </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Sejarah</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Visi, Misi dan Nilai</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Galeri</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Karier</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Produk </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Kategori Produk 1</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kategori Produk 2</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kategori Produk 3</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kategori Produk 4</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Artikel </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Kategori Artikel 1</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kategori Artikel 2</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kategori Artikel 3</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kategori Artikel 4</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#questions" class="nav-link">Questions</a>
+                            <a href="#products" class="nav-link">Contacts</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#products" class="nav-link">Blogs</a>
+                            <a href="#contacts" class="nav-link icon-whatsapp-navbar">
+                                <img src="https://tunasmitra.co.id/frontend/img/whatsapp.png" alt="" />
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contacts" class="nav-link">Contacts</a>
+                            <a href="#contacts" class="nav-link icon-language-navbar">
+                                <img src="https://tunasmitra.co.id/frontend/img/Bendera3.png" alt="" />
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -40,15 +85,47 @@
         </nav>
 
         <!-- Showchase -->
-        <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <!-- bg-dark text-light -->
+        <section class="bg-2 p-5 pt-lg-5 text-center text-sm-start">
             <div class="container">
                 <div class="d-sm-flex align-items-center justify-content-between">
                     <div>
-                        <h1>Become <span class="text-warning">A Developer</span></h1>
-                        <p class="lead my-4">Lorem ipsum dolor sit amet quod, qui, fugit laborum delectus sunt atque facilis debitis, repudiandae et a optio ducimus mollitia odio aliquam!</p>
-                        <button class="btn btn-primary btn-lg">Click Me</button>
+                        <h3>PT. <span class="text-primary">TUNAS MITRA SUKSES</span></h3>
+                        <h1>LAKBAN, PLASTIK WRAPPING, MESIN PACKING</h1>
+                        <p class="lead my-4">Tunas Mitra memproduksi Lakban dan Plastik Wrapping dengan brand TM Tape dan TM Stretch yang sudah eksis dipasar lebih dari 20 tahun.</p>
+                        <button class="btn btn-success btn-lg btn-whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                            WhatsApp
+                        </button>
+                        <button class="btn btn-primary btn-lg btn-email">
+                            <i class="bi bi-envelope-check-fill"></i>
+                            Email
+                        </button>
                     </div>
-                    <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" srcset="" />
+                    <img class="img-fluid w-50 d-none d-sm-block" src="https://tunasmitra.co.id/frontend/img/produk-tunas-mitra.png" alt="" srcset="" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Learn Section -->
+        <section id="learn" class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md mb-1">
+                        <img src="https://tunasmitra.co.id/frontend/img/gedung.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-md">
+                        <h2>Tunas Mitra Grob</h2>
+                        <p class="lead">
+                            Tunas Mitra didirikan pada tahun 1999 dengan nama PT. Tunas Mitra Jaya di Batam, sebuah kota industri yang selalu berkembang dari tahun ke tahun. Tunas Mitra sendiri bergerak dalam bidang pengemasan seperti
+                            lakban, plastik pembungkus, tali pengikat, dan masih banyak lagi. Komitment dan dedikasi kita menjadi salah satu alasan Tunas Mitra berkembang hingga saat ini.
+                        </p>
+                        <!-- <p class="lead">Lorem ipsum dolor sit amet consectetur adipis Amet dicta repellat quasi soluta sit nemo, at voluptatum odit ullam quia tempora architecto?</p> -->
+                        <a href="#" class="btn btn-light mt-3">
+                            <i class="bi bi-chevron-right"></i>
+                            Read more
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -57,8 +134,7 @@
         <section class="bg-primary text-light p-5">
             <div class="container">
                 <div class="d-md-flex justify-content-between align-items-center">
-                    <h3 class="mb-3 mb-md-0">Type Your Products</h3>
-
+                    <h3 class="mb-3 mb-md-0">Type Your Products Here. . .</h3>
                     <div class="input-group products-input">
                         <input type="text" class="form-control" placeholder="Search Products" aria-label="Search Products . . ." aria-describedby="button-addon2" />
                         <button class="btn btn-dark btn-lg" type="button" id="button-addon2"><i class="bi bi-search"></i> Search</button>
@@ -242,30 +318,248 @@
             </div>
         </section>
 
-        <section id="contacts" class="py-5">
+        <!-- section contacts -->
+        <!-- <section id="contacts" class="py-5">
             <div class="container">
                 <div class="row g-4">
                     <div class="col-md">
                         <h2 class="text-center mb-4">Contact Info</h2>
                         <ul class="list-group list-group-flush lead">
-                            <li class="list-group-item"><span class="fw-bold">Tunas Mitra Jaya : </span> Batam City</li>
-                            <li class="list-group-item"><span class="fw-bold">Tunas Mitra Sukses : </span> Bekasi, West Java</li>
-                            <li class="list-group-item"><span class="fw-bold">Tunas Mitra Sentosa : </span> Semarang, Central Java</li>
-                            <li class="list-group-item"><span class="fw-bold">Tunas Mitra Makmur : </span> Tangerang, Banten</li>
-                            <li class="list-group-item"><span class="fw-bold">Tunas Mitra Maju : </span> Surabaya, East Java</li>
+                            <li class="list-group-item">
+                                <span class="fw-bold"><i class="bi bi-whatsapp"></i> </span> +6281901116699
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold"><i class="bi bi-telephone-inbound-fill"></i> </span> 02189842632
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold"><i class="bi bi-envelope-check-fill"></i> </span> packaging@tunasmitra.co.id
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold"><i class="bi bi-geo-alt-fill"></i></span> Jl. Tekno 3 Jababeka Tahap 3 Blok A8D, Pasirgombong, Kec. Cikarang Utara, Bekasi, Jawa Barat 17530
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md">
-                        <!-- <div id="map"></div> -->
-                        <div class="map">
+                        <div class="ratio ratio-4x3 map">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.8579725011896!2d107.15568611512046!3d-6.2823945954529306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637142789234!5m2!1sid!2sid"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.857972501359!2d107.15568075067975!3d-6.282394595430648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637203401664!5m2!1sid!2sid"
                                 width="600"
                                 height="450"
                                 style="border: 0"
                                 allowfullscreen=""
                                 loading="lazy"
                             ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contacts" class="py-5">
+            <div class="container">
+                <div class="tap-content-branch">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="text-center mb-4">Contact Info</h2>
+                            <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Bekasi</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Batam</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Semarang</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Tangerang</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Surabaya</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <div class="row g-4">
+                                    <div class="col-md">
+                                        <!-- <h2 class="text-center mb-4">Contact Info</h2> -->
+                                        <ul class="list-group list-group-flush lead">
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-building"></i> </span> Tunas Mitra Sukses
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-whatsapp"></i> </span> +6281901116699
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-telephone-inbound-fill"></i> </span> 02189842632
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-envelope-check-fill"></i> </span> packaging@tunasmitra.co.id
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-geo-alt-fill"></i></span> Jl. Tekno 3 Jababeka Tahap 3 Blok A8D, Pasirgombong, Kec. Cikarang Utara, Bekasi, Jawa Barat 17530
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="ratio ratio-4x3 map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.857972501359!2d107.15568075067975!3d-6.282394595430648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637203401664!5m2!1sid!2sid"
+                                                width="600"
+                                                height="450"
+                                                style="border: 0"
+                                                allowfullscreen=""
+                                                loading="lazy"
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="row g-4">
+                                    <div class="col-md">
+                                        <!-- <h2 class="text-center mb-4">Contact Info</h2> -->
+                                        <ul class="list-group list-group-flush lead">
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-building"></i> </span> Tunas Mitra Jaya
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-whatsapp"></i> </span> +6281901116699
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-telephone-inbound-fill"></i> </span> 02189842632
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-envelope-check-fill"></i> </span> packaging@tunasmitra.co.id
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-geo-alt-fill"></i></span> Jl. Tekno 3 Jababeka Tahap 3 Blok A8D, Pasirgombong, Kec. Cikarang Utara, Bekasi, Jawa Barat 17530
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="ratio ratio-4x3 map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.857972501359!2d107.15568075067975!3d-6.282394595430648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637203401664!5m2!1sid!2sid"
+                                                width="600"
+                                                height="450"
+                                                style="border: 0"
+                                                allowfullscreen=""
+                                                loading="lazy"
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class="row g-4">
+                                    <div class="col-md">
+                                        <!-- <h2 class="text-center mb-4">Contact Info</h2> -->
+                                        <ul class="list-group list-group-flush lead">
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-building"></i> </span> Tunas Mitra Sentosa
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-whatsapp"></i> </span> +6281901116699
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-telephone-inbound-fill"></i> </span> 02189842632
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-envelope-check-fill"></i> </span> packaging@tunasmitra.co.id
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-geo-alt-fill"></i></span> Jl. Tekno 3 Jababeka Tahap 3 Blok A8D, Pasirgombong, Kec. Cikarang Utara, Bekasi, Jawa Barat 17530
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="ratio ratio-4x3 map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.857972501359!2d107.15568075067975!3d-6.282394595430648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637203401664!5m2!1sid!2sid"
+                                                width="600"
+                                                height="450"
+                                                style="border: 0"
+                                                allowfullscreen=""
+                                                loading="lazy"
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <div class="row g-4">
+                                    <div class="col-md">
+                                        <!-- <h2 class="text-center mb-4">Contact Info</h2> -->
+                                        <ul class="list-group list-group-flush lead">
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-building"></i> </span> Tunas Mitra Makmur
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-whatsapp"></i> </span> +6281901116699
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-telephone-inbound-fill"></i> </span> 02189842632
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-envelope-check-fill"></i> </span> packaging@tunasmitra.co.id
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-geo-alt-fill"></i></span> Jl. Tekno 3 Jababeka Tahap 3 Blok A8D, Pasirgombong, Kec. Cikarang Utara, Bekasi, Jawa Barat 17530
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="ratio ratio-4x3 map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.857972501359!2d107.15568075067975!3d-6.282394595430648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637203401664!5m2!1sid!2sid"
+                                                width="600"
+                                                height="450"
+                                                style="border: 0"
+                                                allowfullscreen=""
+                                                loading="lazy"
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <div class="row g-4">
+                                    <div class="col-md">
+                                        <!-- <h2 class="text-center mb-4">Contact Info</h2> -->
+                                        <ul class="list-group list-group-flush lead">
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-building"></i> </span> Tunas Mitra Maju
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-whatsapp"></i> </span> +6281901116699
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-telephone-inbound-fill"></i> </span> 02189842632
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-envelope-check-fill"></i> </span> packaging@tunasmitra.co.id
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span class="fw-bold"><i class="bi bi-geo-alt-fill"></i></span> Jl. Tekno 3 Jababeka Tahap 3 Blok A8D, Pasirgombong, Kec. Cikarang Utara, Bekasi, Jawa Barat 17530
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md">
+                                        <div class="ratio ratio-4x3 map">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.857972501359!2d107.15568075067975!3d-6.282394595430648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699ad36283b2ff%3A0xffeee28b316196f4!2sPT%20Tunas%20Mitra%20Sukses!5e0!3m2!1sid!2sid!4v1637203401664!5m2!1sid!2sid"
+                                                width="600"
+                                                height="450"
+                                                style="border: 0"
+                                                allowfullscreen=""
+                                                loading="lazy"
+                                            ></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -278,7 +572,14 @@
             </div>
         </footer>
 
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
         <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
         <script>
             mapboxgl.accessToken = "pk.eyJ1IjoidWttYW1hdGljIiwiYSI6ImNrdzNjNWNiZzBsbmYycG1tajFkemhpaTUifQ.u_SJwlGLww48oK_RUXAiJA";
